@@ -505,12 +505,29 @@ font-family: 'Raleway', sans-serif;*/
     
 }
 
+.sklimg-1:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon1.png);
+
+    
+}
+
+
 .sklimg-2 {
     
     background-image: url(../images/skill-icon2.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
+
+.sklimg-2:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon2.png);
+
     
 }
 
@@ -523,12 +540,28 @@ font-family: 'Raleway', sans-serif;*/
     
 }
 
+.sklimg-3:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon3.png);
+
+    
+}
+
 .sklimg-4 {
     
     background-image: url(../images/skill-icon4.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
+
+.sklimg-4:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon4.png);
+
     
 }
 
@@ -542,6 +575,14 @@ font-family: 'Raleway', sans-serif;*/
     
 }
 
+.sklimg-5:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon5.png);
+
+    
+}
+
 .sklimg-6 {
     
     background-image: url(../images/skill-icon6.png);
@@ -551,6 +592,13 @@ font-family: 'Raleway', sans-serif;*/
     
 }
 
+.sklimg-6:hover {
+    
+    transition: all ease 0.5s;
+    background-image: url(../images/hover_skill-icon6.png);
+
+    
+}
 
 
 
