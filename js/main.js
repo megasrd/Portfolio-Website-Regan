@@ -27,26 +27,58 @@ var CANVAS2_WIDTH = 500;
 var CANVAS2_HEIGHT = 500;
 
 var mesh1 = null;
-var meAvatar = null;
+var meAvatar;
 
+//LOADERS
+
+var mixer;
+
+var JSONloader = new THREE.JSONLoader();
+
+//var daeLoader = new THREE.ColladaLoader();
+//
+//var loadingManager = new THREE.LoadingManager(function () {
+//
+//    scene2.add(meAvatar);
+//    alert('yeet');
+//
+//});
+//
+//
+//daeLoader.load("./dae/test.dae", function (collada) {
+//
+//    meAvatar = collada.scene;
+//    meAvatar.position.set(0, 0, 0);
+//
+//});
 
 function loadMesh() {
 
-    var loader = new THREE.JSONLoader();
-
-    loader.load('./json_files/test.json', function (geometry, materials) {
+    JSONloader.load('./json_files/test.json', function (geometry, materials) {
         mesh1 = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
         scene1.add(mesh1);
     });
-    
-    
-    loader.load('./json_files/me.json', function (geometry, materials) {
-        meAvatar = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
-        scene2.add(meAvatar);
-    });
+
+
+
+
+
+    //Loads Default Avatar
+        JSONloader.load('./json_files/me.json', function (geometry, materials) {
+            meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+            scene2.add(meAvatar);
+        });
 
 }
 
+function loadAvatar() {
+
+
+
+}
+
+
+//LOADERS - END
 
 var SPEED = 0.001;
 
