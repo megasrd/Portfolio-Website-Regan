@@ -1,0 +1,688 @@
+/*
+font-family: 'Work Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+@font-face {
+
+    font-family: code_light;
+    src: url(css/fonts/Code-Light.ttf);
+
+}
+
+.side-nav {
+    
+    position: fixed;
+    z-index: 9000;
+    right: 1.5vw;
+    bottom: 20vw;
+}
+
+.sv_button {
+    
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    cursor:pointer;
+    margin: 1vw 0vw;    
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    
+    transition: all ease 0.3s;
+    
+}
+
+.sv_button:hover {
+    border: 2px solid #cc3d3d;
+    background-color: #cc3d3d;
+    transition: all ease 0.3s;
+    
+}
+
+.normal-button {
+
+    background: linear-gradient(transparent, transparent);
+    border: 1px solid #252525;
+    font-size: 0.8em;
+    padding: 0.5vw 2.5vw;
+    transition: all 0.3s ease;
+}
+
+
+.normal-button:hover {
+
+    color: white;
+    transition: all 0.3s ease;
+    background: linear-gradient(#FF7A6A, #FF3C2A);
+    border: 1px solid transparent;
+
+}
+
+
+
+
+
+body {
+
+    background: linear-gradient(#d8d8d8, #af3d3d);
+    margin: 0;
+
+}
+
+#wrapper {
+    z-index: 800;
+    position: relative;
+    
+}
+
+.main_nav-bar ul {
+    
+    display: none;
+    z-index: 1001;
+    overflow: auto;
+    padding: 0.5vw;
+    margin: 0;
+    list-style: none;
+    background-color: #383838;
+
+}
+
+.main_nav-bar ul li {
+
+    display: inline-block;
+    float: right;
+
+}
+
+.main_nav-bar ul li a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    margin: 0.2vw 1vw;
+    font-family: sans-serif;
+
+}
+
+#particles-js {
+    
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.main_container-1 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.main_container-2 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.main_container-3 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+
+}
+
+.main_container-4 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+
+
+}
+
+.main_container-5 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+
+}
+
+.main_container-5_1 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+
+}
+
+.main_container-6 {
+    
+    z-index: 800;
+    position: relative;
+    width: 100vw;
+
+}
+
+#three-container {
+
+    z-index: 1001;
+    float: left;
+    margin: 0.5vw;
+    height: 100vh;
+    width: 48.5vw;
+}
+
+
+.main-content-1 {
+
+    z-index: 1001;
+    float: left;
+    padding: 4vw;
+    display: inline-block;
+    width: 42vw;
+    
+}
+
+.main-content-2 {
+
+    margin: 1vh 3vw;
+
+}
+
+
+.textcol-red {
+    color: rgba(255, 0, 0, 0.56);
+}
+
+.textcol-black {
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.textcol-white {
+    color: #ffffff;
+}
+
+.text-wrap {
+
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.56);
+    padding: 0.5vw;
+    font-size: 2em;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.text-wrap::before {
+
+    margin: 0;
+    content: "";
+    display: block;
+
+}
+
+.text-wrap::after {
+
+    margin: 0;
+    content: "";
+    display: block;
+
+}
+
+.page-header-2::after {
+
+    margin: 0;
+    content: "";
+    display: block;
+
+}
+
+.page-header-2::before {
+
+    margin: 0;
+    content: "";
+    display: block;
+
+}
+
+.page-header-2 {
+
+    display: inline-block;
+    background-color: rgba(255, 0, 0, 0.56);
+    padding: 0.5vw;
+    font-size: 4em;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+
+}
+
+
+.main-content-1 .head-text-1 {
+
+    padding: 0;
+    margin: 0.1vw;
+    font-size: 3em;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.main-content-1 .head-text-2 {
+
+    margin: 0;
+    font-size: 15em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.about-container {
+
+    box-shadow: 0px 1px 30px #888888;
+    padding: 2vw;
+    background-color: #f0f0f0;
+    display: inline-block;
+    width: 17vw;
+    margin: 0vh 0.8vw;
+
+}
+
+.about-header {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    margin: 0.1vw;
+
+}
+
+.about-subheader {
+
+    margin: 0.1vw;
+    font-size: 1.1em;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.about-image {
+
+    height: 200px;
+    width: 200px;
+    margin: 1vw;
+
+}
+
+.abtimg1 {
+    
+    background-image: url(../images/about-icon1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.abtimg2 {
+    
+    background-image: url(../images/about-icon2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.abtimg3 {
+    
+    background-image: url(../images/about-icon3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.abtimg4 {
+    
+    background-image: url(../images/about-icon4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.about-paragraph {
+
+    margin: 0.1vw;
+    font-size: 1em;
+    font-family: sans-serif;
+
+}
+
+.portfolio-container {
+
+    margin: 0;
+    overflow: auto;
+    width: 85vw;
+    height: 75vh;
+
+}
+
+.port-con1 {
+    box-shadow: 0px 1px 10px #888888;
+    float: left;
+    background-color: #efefef;
+    width: 25%;
+    height: 95%;
+    margin: 0.5vw;
+
+}
+
+.port-con2 {
+    box-shadow: 0px 1px 10px #888888;
+    float: left;
+    background-color: #efefef;
+    width: 22%;
+    height: 46%;
+    margin: 0.5vw;
+
+}
+
+.port-con3 {
+    box-shadow: 0px 1px 10px #888888;
+    float: left;
+    background-color: #efefef;
+    width: 45%;
+    height: 46%;
+    margin: 0.5vw;
+
+}
+
+.skillset-container {
+    
+    margin: 0.5vh 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: center;
+
+}
+
+
+.skills {
+    
+    box-shadow: 0px 1px 30px #888888;
+    margin: 0vw 3vw;
+    display:  inline-block;
+    background-color: #B3B3B3;
+    width: 19vw;
+    height: 68vh;
+    padding: 1.5vw;
+    
+}
+
+.skills h3 {
+    
+    text-align: left;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    margin: 0;
+    
+}
+
+.skills p {
+    
+    text-align: left;
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    
+    
+}
+
+/*font-family: 'Work Sans', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+.skills .skill-img {
+    
+    display: inline-block;
+    margin: 1vw;
+    padding: 10px;
+    border-radius: 200px;
+    border: 2px solid #818181;
+    background-color: #818181;
+    width: 4em;
+    height: 4em;
+    transition: all ease 0.2s;
+    box-shadow: 0px 1px 30px rgba(136, 136, 136, 0);
+}
+
+
+.skills .skill-img:hover {
+    
+
+    background-color: #e0e0e0;
+    transition: all ease 0.2s;
+    box-shadow: 0px 1px 30px rgb(75, 75, 75);
+}
+
+.sklimg-1 {
+    
+    background-image: url(../images/skill-icon1.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.sklimg-2 {
+    
+    background-image: url(../images/skill-icon2.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.sklimg-3 {
+    
+    background-image: url(../images/skill-icon3.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.sklimg-4 {
+    
+    background-image: url(../images/skill-icon4.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.sklimg-5 {
+    
+    background-image: url(../images/skill-icon5.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.sklimg-6 {
+    
+    background-image: url(../images/skill-icon6.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+
+
+.portrait-pic {
+    
+  
+    width: 10em;
+    height: 10em;
+    background-color: dimgrey;
+    border-radius: 300px;
+    
+}
+
+.stats {
+    
+    box-shadow: 0px 1px 30px #888888;
+    margin: 0vw 3vw;
+    display:  inline-block;
+    background-color: #B3B3B3;
+    width: 19vw;
+    height: 68vh;
+    padding: 1.5vw;
+}
+
+.stats h3 {
+    
+    text-align: left;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    margin: 0.2vw;
+    
+}
+
+.stats p:nth-child(2){
+    
+    text-align: left;
+    color: red;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+    margin: 0.2vw;
+    
+    
+}
+
+.stats p:nth-child(4){
+    
+    text-align: left;
+    color: #2c2c2c;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    margin: 0.5vw;
+    
+    
+}
+
+#three-container_skills {
+    
+    margin: 0vw 3vw;
+    display:  inline-block;
+    background-color: #636363;
+    width: 20vw;
+    height: 75vh;
+    
+}
+
+.time-info {
+    padding: 0.5vw;
+    display: block;
+    width: 25vw;
+    background-color: #fafafa;
+    
+}
+
+.ti-left_align {
+    
+    margin-left: -55vw;
+    
+}
+
+
+.ti-right_align {
+    
+    margin-right: -55vw;
+    
+}
+.timeline-info {
+    
+    font-family: 'Work Sans', sans-serif;
+    color: #ffffff;
+    font-size: 1.1em;
+    width: 50%;
+}
+
+.time-info img {
+    
+    width: 90%;
+    height: 15vh;
+    background-color: #b4b4b4;
+    
+}
+
+.time-info h3 {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    margin: 0.1vw;
+    text-align: left;
+    border-bottom: 0.5px solid #ff3e3e;
+}
+
+.time-info p {
+    
+    font-family: 'Exo 2', sans-serif;
+    margin: 0.1w;
+    
+}
+
+.contact-container {
+    
+    box-shadow: 0px 1px 30px #888888;
+    background-color: #e2e2e2;
+    width: 50vw;
+    padding: 1vw;
+    
+}
+
+.contact-container h3 {
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+
+    
+}
+
+.email_field {
+    
+    margin: 1vw 0vw;
+    width: 80%;
+    display: block;
+    
+}
+
+.name_field {
+    
+    margin: 1vw 0vw;
+    width: 80%;
+    display: block;
+}
+
+.contact-textarea {
+    
+    margin: 1vw 0vw;
+    width: 80%;
+    height: 30vh;
+    display: block;
+    
+}
