@@ -27,6 +27,8 @@ var CANVAS2_WIDTH = 500;
 var CANVAS2_HEIGHT = 500;
 
 var mesh1 = null;
+var meAvatar = null;
+
 
 function loadMesh() {
 
@@ -36,10 +38,14 @@ function loadMesh() {
         mesh1 = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
         scene1.add(mesh1);
     });
+    
+    
+    loader.load('./json_files/me.json', function (geometry, materials) {
+        meAvatar = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+        scene2.add(meAvatar);
+    });
 
 }
-
-
 
 
 var SPEED = 0.001;
@@ -47,6 +53,7 @@ var SPEED = 0.001;
 function rotateThing() {
 
     mesh1.rotation.y -= SPEED;
+    meAvatar.rotation.y -= SPEED;
 
 }
 
@@ -70,10 +77,10 @@ camera1.position.y = 2.7;
 camera1.position.z = 2.7;
 camera1.lookAt(scene1.position);
 
-camera2.position.x = 15;
-camera2.position.y = 15;
-camera2.position.z = 15;
-camera2.lookAt(scene2.position);
+camera2.position.x = 0;
+camera2.position.y = 4.5;
+camera2.position.z = 12;
+//camera2.lookAt(meAvatar.position);
 
 
 //Lighting - Scene 1
@@ -88,7 +95,7 @@ scene1.add(directionalLight1);
 
 //Lighting - Scene 2
 
-var light2 = new THREE.AmbientLight(0xffffff, 0.5); // soft white light
+var light2 = new THREE.AmbientLight(0xffffff, 0.8); // soft white light
 light2.castShadow = true;
 scene2.add(light2);
 
