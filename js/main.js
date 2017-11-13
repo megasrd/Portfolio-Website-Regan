@@ -31,8 +31,6 @@ var meAvatar;
 
 //LOADERS
 
-var mixer;
-
 var JSONloader = new THREE.JSONLoader();
 
 //var daeLoader = new THREE.ColladaLoader();
@@ -72,11 +70,13 @@ function setAvatar(avatarNum) {
     switch (caseNum) {
 
         case 1:
-            
+
             scene2.remove(meAvatar);
 
-            JSONloader.load('./json_files/avatars/default-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+            JSONloader.load('./json_files/avatars/default-avatar-2.json', function (geometry, materials) {
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
 
             });
@@ -84,76 +84,88 @@ function setAvatar(avatarNum) {
             break;
 
         case 2:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/3d-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
+
             });
 
             break;
 
         case 3:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/illustrator-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
+
             });
 
             break;
 
 
         case 4:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/coding-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
-                
+
+
             });
 
             break;
 
         case 5:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/gaming-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
+
             });
 
             break;
 
 
         case 6:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/photoshop-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
+
             });
 
             break;
 
         case 7:
-            
+
             scene2.remove(meAvatar);
 
             JSONloader.load('./json_files/avatars/github-avatar.json', function (geometry, materials) {
-                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+                meAvatar = new THREE.SkinnedMesh(geometry, materials, false);
+
                 scene2.add(meAvatar);
-                
+
             });
 
             break;
@@ -173,6 +185,9 @@ function rotateThing() {
     meAvatar.rotation.y -= SPEED;
 }
 
+
+//Dynamically Update Canvas (Responsive)
+
 function setCanvasSize() {
 
     CANVAS1_WIDTH = document.getElementById('three-container').offsetWidth;
@@ -184,9 +199,7 @@ function setCanvasSize() {
 
 };
 
-
-
-
+//Camera-Position Set
 
 camera1.position.x = 2.7;
 camera1.position.y = 2.7;
@@ -195,7 +208,7 @@ camera1.lookAt(scene1.position);
 
 camera2.position.x = 0;
 camera2.position.y = 4.5;
-camera2.position.z = 12;
+camera2.position.z = 15;
 //camera2.lookAt(meAvatar.position);
 
 
@@ -211,12 +224,15 @@ scene1.add(directionalLight1);
 
 //Lighting - Scene 2
 
-var light2 = new THREE.AmbientLight(0xffffff, 0.8); // soft white light
+var light2 = new THREE.AmbientLight(0xffffff, 1); // soft white light
 light2.castShadow = true;
 scene2.add(light2);
 
-var directionalLight2 = new THREE.DirectionalLight(0xffffff, 1);
+var directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
 scene2.add(directionalLight2);
+
+var hemLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
+scene2.add(hemLight);
 
 
 canvas1.appendChild(renderer1.domElement);
