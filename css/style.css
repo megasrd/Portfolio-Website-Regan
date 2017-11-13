@@ -454,7 +454,7 @@ font-family: 'Raleway', sans-serif;*/
     width: 40%;
     display: inline-block;
     margin: 0.3vw;
-    text-align: center;
+    justify-content: center;
 }
 
 .skills .skill-img {
@@ -465,8 +465,8 @@ font-family: 'Raleway', sans-serif;*/
     border-radius: 200px;
     border: 2px solid #818181;
     background-color: #818181;
-    width: 4em;
-    height: 4em;
+    width: 6em;
+    height: 6em;
     transition: all ease 0.2s;
     box-shadow: 0px 1px 30px rgba(136, 136, 136, 0);
 }
