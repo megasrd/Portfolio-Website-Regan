@@ -60,22 +60,107 @@ function loadMesh() {
     });
 
 
-
-
-
     //Loads Default Avatar
-        JSONloader.load('./json_files/me.json', function (geometry, materials) {
-            meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
-            scene2.add(meAvatar);
-        });
+    setAvatar(1);
 
 }
 
-function loadAvatar() {
+function setAvatar(avatarNum) {
+
+    var caseNum = avatarNum;
+
+    switch (caseNum) {
+
+        case 1:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/default-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+
+            });
+
+            break;
+
+        case 2:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/3d-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+            });
+
+            break;
+
+        case 3:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/illustrator-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+            });
+
+            break;
 
 
+        case 4:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/coding-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+                
+            });
+
+            break;
+
+        case 5:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/gaming-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+            });
+
+            break;
+
+
+        case 6:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/photoshop-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+            });
+
+            break;
+
+        case 7:
+            
+            scene2.remove(meAvatar);
+
+            JSONloader.load('./json_files/avatars/github-avatar.json', function (geometry, materials) {
+                meAvatar = new THREE.SkinnedMesh(geometry, new THREE.MeshFaceMaterial(materials));
+                scene2.add(meAvatar);
+                
+            });
+
+            break;
+    }
 
 }
+
 
 
 //LOADERS - END
@@ -86,7 +171,6 @@ function rotateThing() {
 
     mesh1.rotation.y -= SPEED;
     meAvatar.rotation.y -= SPEED;
-
 }
 
 function setCanvasSize() {
@@ -141,6 +225,8 @@ canvas2.appendChild(renderer2.domElement);
 
 
 loadMesh();
+
+
 
 (function animate() {
 
