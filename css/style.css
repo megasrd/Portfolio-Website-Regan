@@ -70,6 +70,7 @@ body {
 }
 
 #wrapper {
+    
     z-index: 800;
     position: relative;
 
@@ -233,10 +234,7 @@ body {
 
 .text-wrap {
 
-    display: inline-block;
     background-color: rgba(255, 0, 0, 0.56);
-    padding: 0.5vw;
-    font-size: 2em;
     font-family: 'Work Sans', sans-serif;
 
 }
@@ -287,17 +285,12 @@ body {
 
 .main-content-1 .head-text-1 {
 
-    padding: 0;
-    margin: 0.1vw;
-    font-size: 3em;
     font-family: 'Work Sans', sans-serif;
 
 }
 
 .main-content-1 .head-text-2 {
 
-    margin: 0;
-    font-size: 15em;
     font-family: 'Raleway', sans-serif;
 
 }
