@@ -8,6 +8,10 @@
         height: 100vh;
 
     }
+    
+    #particles-js {
+        display: none;
+    }
 
     .main_nav-bar {
 
@@ -35,8 +39,11 @@
         
         width: 25vw;
         height: 10vh;
-        background-color: orange;
+        background-color: rgba(244, 40, 40, 0.44);
         position: absolute;
+        bottom: 2vw;
+        left: 39%;
+        z-index: 5000;
         
     }
 
