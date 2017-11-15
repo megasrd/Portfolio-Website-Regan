@@ -3,6 +3,8 @@ font-family: 'Work Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 
+@import url(media-queries.css);
+
 @font-face {
 
     font-family: code_light;
@@ -11,7 +13,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 .side-nav {
-    
+
     position: fixed;
     z-index: 9000;
     right: 1.5vw;
@@ -19,26 +21,26 @@ font-family: 'Raleway', sans-serif;
 }
 
 .sv_button {
-    
+
     border-radius: 100px;
     border: 2px solid #ffffff;
     text-decoration: none;
-    cursor:pointer;
-    margin: 1vw 0vw;    
+    cursor: pointer;
+    margin: 1vw 0vw;
     display: block;
     width: 10px;
     height: 10px;
     background-color: rgba(255, 255, 255, 0);
-    
+
     transition: all ease 0.3s;
-    
+
 }
 
 .sv_button:hover {
     border: 2px solid #cc3d3d;
     background-color: #cc3d3d;
     transition: all ease 0.3s;
-    
+
 }
 
 .normal-button {
@@ -60,10 +62,6 @@ font-family: 'Raleway', sans-serif;
 
 }
 
-
-
-
-
 body {
 
     background: linear-gradient(#d8d8d8, #585858);
@@ -74,13 +72,19 @@ body {
 #wrapper {
     z-index: 800;
     position: relative;
-    
+
+}
+
+.main_nav-bar {
+
+    position: relative;
+    z-index: 3000;
+
 }
 
 .main_nav-bar ul {
-    
-    display: none;
-    z-index: 1001;
+
+
     overflow: auto;
     padding: 0.5vw;
     margin: 0;
@@ -100,14 +104,23 @@ body {
 
     text-decoration: none;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 0.2vw 1vw;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    border-bottom: 2px solid rgba(212, 69, 69, 0);
+    transition: all ease 0.2s;
+
+}
+
+.main_nav-bar ul li a:hover {
+
+    transition: all ease 0.2s;
+    border-bottom: 2px solid #d44545;
 
 }
 
 #particles-js {
-    
+
     z-index: 500;
     position: fixed;
     width: 100%;
@@ -121,7 +134,7 @@ body {
 }
 
 .main_container-1 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -130,7 +143,7 @@ body {
 }
 
 .main_container-2 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -139,7 +152,7 @@ body {
 }
 
 .main_container-3 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -147,7 +160,7 @@ body {
 }
 
 .main_container-4 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -156,7 +169,7 @@ body {
 }
 
 .main_container-5 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -164,7 +177,7 @@ body {
 }
 
 .main_container-5_1 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -172,7 +185,7 @@ body {
 }
 
 .main_container-6 {
-    
+
     z-index: 800;
     position: relative;
     width: 100vw;
@@ -196,7 +209,7 @@ body {
     padding: 4vw;
     display: inline-block;
     width: 42vw;
-    
+
 }
 
 .main-content-2 {
@@ -325,35 +338,35 @@ body {
 }
 
 .abtimg1 {
-    
+
     background-image: url(../images/about-icon1.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+
 }
 
 .abtimg2 {
-    
+
     background-image: url(../images/about-icon2.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+
 }
 
 .abtimg3 {
-    
+
     background-image: url(../images/about-icon3.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+
 }
 
 .abtimg4 {
-    
+
     background-image: url(../images/about-icon4.png);
     background-size: contain;
     background-repeat: no-repeat;
-    
+
 }
 
 .about-paragraph {
@@ -366,10 +379,11 @@ body {
 
 .portfolio-container {
 
+    justify-content: center;
     margin: 0;
     overflow: auto;
-    width: 85vw;
-    height: 75vh;
+    width: 90vw;
+    height: 60vh;
 
 }
 
@@ -377,8 +391,8 @@ body {
     box-shadow: 0px 1px 10px #888888;
     float: left;
     background-color: #efefef;
-    width: 25%;
-    height: 95%;
+    width: 20em;
+    height: 32.5em;
     margin: 0.5vw;
 
 }
@@ -387,8 +401,8 @@ body {
     box-shadow: 0px 1px 10px #888888;
     float: left;
     background-color: #efefef;
-    width: 22%;
-    height: 46%;
+    width: 16.9em;
+    height: 15.6em;
     margin: 0.5vw;
 
 }
@@ -397,14 +411,14 @@ body {
     box-shadow: 0px 1px 10px #888888;
     float: left;
     background-color: #efefef;
-    width: 45%;
-    height: 46%;
+    width: 34.6em;
+    height: 15.6em;
     margin: 0.5vw;
 
 }
 
 .skillset-container {
-    
+
     margin: 0.5vh 4vw;
     display: flex;
     flex-wrap: wrap;
@@ -415,25 +429,25 @@ body {
 
 
 .skills {
-    
+
     box-shadow: 0px 1px 30px #888888;
     margin: 0vw 3vw;
-    display:  inline-block;
+    display: inline-block;
     background-color: #B3B3B3;
     width: 19vw;
     height: 68vh;
     padding: 1.5vw;
-    
+
 }
 
 .skills h3 {
-    
+
     text-align: left;
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 3em;
     margin: 0;
-    
+
 }
 
 .skills p {
@@ -442,15 +456,15 @@ body {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
     margin: 0;
-    
-    
+
+
 }
 
 /*font-family: 'Work Sans', sans-serif;
 font-family: 'Raleway', sans-serif;*/
 
 .skillicon_container {
-    
+
     width: 40%;
     display: inline-block;
     margin: 0.3vw;
@@ -458,7 +472,7 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .skills .skill-img {
-    
+
     display: block;
     margin: 0.5vw;
     padding: 10px;
@@ -472,7 +486,7 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .skills .hover-text {
-    
+
     font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 0.8em;
@@ -484,139 +498,139 @@ font-family: 'Raleway', sans-serif;*/
 
 
 .skills .skill-img:hover {
-    
+
     background-color: #e0e0e0;
     transition: all ease 0.2s;
     box-shadow: 0px 1px 30px rgb(75, 75, 75);
 }
 
 .skills .skill-img:hover + .hover-text {
-    
+
     opacity: 1;
     transition: all ease 0.5s;
 }
 
 .sklimg-1 {
-    
+
     background-image: url(../images/skill-icon1.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-1:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon1.png);
 
-    
+
 }
 
 
 .sklimg-2 {
-    
+
     background-image: url(../images/skill-icon2.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-2:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon2.png);
 
-    
+
 }
 
 .sklimg-3 {
-    
+
     background-image: url(../images/skill-icon3.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-3:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon3.png);
 
-    
+
 }
 
 .sklimg-4 {
-    
+
     background-image: url(../images/skill-icon4.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-4:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon4.png);
 
-    
+
 }
 
 
 .sklimg-5 {
-    
+
     background-image: url(../images/skill-icon5.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-5:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon5.png);
 
-    
+
 }
 
 .sklimg-6 {
-    
+
     background-image: url(../images/skill-icon6.png);
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
 .sklimg-6:hover {
-    
+
     transition: all ease 0.5s;
     background-image: url(../images/hover_skill-icon6.png);
 
-    
+
 }
 
 
 
 .portrait-pic {
-    
-  
+
+
     width: 10em;
     height: 10em;
     background-color: dimgrey;
     border-radius: 300px;
-    
+
 }
 
 .stats {
-    
+
     box-shadow: 0px 1px 30px #888888;
     margin: 0vw 3vw;
-    display:  inline-block;
+    display: inline-block;
     background-color: #B3B3B3;
     width: 19vw;
     height: 68vh;
@@ -624,46 +638,46 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .stats h3 {
-    
+
     text-align: left;
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-size: 2em;
     margin: 0.2vw;
-    
+
 }
 
-.stats p:nth-child(2){
-    
+.stats p:nth-child(2) {
+
     text-align: left;
     color: red;
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
     margin: 0.2vw;
-    
-    
+
+
 }
 
-.stats p:nth-child(4){
-    
+.stats p:nth-child(4) {
+
     text-align: left;
     color: #2c2c2c;
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
     margin: 0.5vw;
-    
-    
+
+
 }
 
 #three-container_skills {
-    
+
     margin: 0vw 3vw;
-    display:  inline-block;
+    display: inline-block;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid white;
     width: 20vw;
     height: 75vh;
-    
+
 }
 
 .time-info {
@@ -671,23 +685,24 @@ font-family: 'Raleway', sans-serif;*/
     display: block;
     width: 25vw;
     background-color: #fafafa;
-    
+
 }
 
 .ti-left_align {
-    
+
     margin-left: -55vw;
-    
+
 }
 
 
 .ti-right_align {
-    
+
     margin-right: -55vw;
-    
+
 }
+
 .timeline-info {
-    
+
     font-family: 'Work Sans', sans-serif;
     color: #ffffff;
     font-size: 1.1em;
@@ -695,15 +710,15 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .time-info img {
-    
+
     width: 90%;
     height: 15vh;
     background-color: #b4b4b4;
-    
+
 }
 
 .time-info h3 {
-    
+
     font-family: 'Raleway', sans-serif;
     font-size: 2.5em;
     margin: 0.1vw;
@@ -712,49 +727,49 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .time-info p {
-    
+
     font-family: 'Exo 2', sans-serif;
     margin: 0.1w;
-    
+
 }
 
 .contact-container {
-    
+
     box-shadow: 0px 1px 30px #888888;
     background-color: #e2e2e2;
     width: 50vw;
     padding: 1vw;
-    
+
 }
 
 .contact-container h3 {
-    
+
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
 
-    
+
 }
 
 .email_field {
-    
+
     margin: 1vw 0vw;
     width: 80%;
     display: block;
-    
+
 }
 
 .name_field {
-    
+
     margin: 1vw 0vw;
     width: 80%;
     display: block;
 }
 
 .contact-textarea {
-    
+
     margin: 1vw 0vw;
     width: 80%;
     height: 30vh;
     display: block;
-    
+
 }
