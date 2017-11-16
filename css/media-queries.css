@@ -2,6 +2,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
+    .mobile-query {}
 
     #wrapper {
 
@@ -9,13 +10,6 @@
         height: 100vh;
 
     }
-
-    .mobile-hidden {
-
-        display: none;
-        
-    }
-
 
     #particles-js {
         display: none;
@@ -36,15 +30,16 @@
     #three-container {
 
         position: absolute;
-        top: 45%;
+        bottom: 0vw;
         z-index: 50;
         margin: 0 auto;
-        height: 50vh;
+        height: 55vh;
         width: 100vw;
     }
 
     .about-container {
 
+        display: block;
         width: 90vw;
         height: 30vh;
         margin: 1vw;
@@ -76,29 +71,6 @@
         height: 150px;
 
     }
-    
-    .aboutme-container {
-        
-        width: 90vw;
-        
-    }
-    
-    .stats {
-        
-        width: 90vw;
-        
-    }
-    
-    .skills {
-        
-    }
-    
-    .portrait-pic {
-        
-        width: 200px;
-        height: 200px;
-        
-    }
 
     .mobile-section-down {
 
@@ -106,7 +78,7 @@
         height: 10vh;
         background-color: rgba(244, 40, 40, 0.44);
         position: absolute;
-        top: 85vh;
+        bottom: 2vw;
         left: 39%;
         z-index: 5000;
 
@@ -118,32 +90,6 @@
         height: 100vh;
 
     }
-
-    .main_container-2 {
-
-        width: 100vw;
-        height: 100vh;
-
-    }
-
-    .main_container-2_1 {
-
-        width: 100vw;
-        height: 100vh;
-
-    }
-    
-    .main_container-4 {
-        
-        width: 100vw;
-        height: 100vh;
-        
-    }
-    
-    .main_container-4_1 {
-        
-    } 
-    
 
     .fp-section.fp-table,
     .fp-slide.fp-table {
@@ -203,20 +149,20 @@
 @media only screen and (min-width: 1224px) {
 
     .mobile-query {
-
+        
         display: none;
-
+        
     }
-
-
-
+    
     .mobile-hidden {
-
+        
         display: none;
-
+        
     }
 
-    #particles-js {}
+    #particles-js {
+        display: none;
+    }
 
     #three-container {
 
