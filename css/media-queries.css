@@ -2,8 +2,6 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-    .mobile-query {}
-
     #wrapper {
 
         width: 100vw;
@@ -35,41 +33,6 @@
         margin: 0 auto;
         height: 55vh;
         width: 100vw;
-    }
-
-    .about-container {
-
-        display: block;
-        width: 90vw;
-        height: 30vh;
-        margin: 1vw;
-
-    }
-
-    .about-header {
-
-        font-size: 5em;
-
-    }
-
-    .about-subheader {
-
-        font-size: 1em;
-
-    }
-
-    .about-paragraph {
-
-        font-size: 0.8em;
-
-    }
-
-    .about-image {
-
-        display: none;
-        width: 150px;
-        height: 150px;
-
     }
 
     .mobile-section-down {
@@ -147,18 +110,6 @@
 /* Desktops and laptops ----------- */
 
 @media only screen and (min-width: 1224px) {
-
-    .mobile-query {
-        
-        display: none;
-        
-    }
-    
-    .mobile-hidden {
-        
-        display: none;
-        
-    }
 
     #particles-js {
         display: none;
