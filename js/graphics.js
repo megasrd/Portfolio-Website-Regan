@@ -23,8 +23,6 @@ var canvas1 = document.getElementById("three-container");
 var canvas2 = document.getElementById("three-container_skills");
 var canvas3 = document.getElementById("threejs_portfolio");
 
-
-
 var CANVAS1_WIDTH = 500;
 var CANVAS1_HEIGHT = 500;
 
@@ -244,7 +242,6 @@ scene1.add(light1);
 var directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
 scene1.add(directionalLight1);
 
-
 //Lighting - Scene 2
 
 var light2 = new THREE.AmbientLight(0xffffff, 1); // soft white light
@@ -257,6 +254,7 @@ scene2.add(directionalLight2);
 var hemLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
 scene2.add(hemLight);
 
+//Append Canvas'
 
 canvas1.appendChild(renderer1.domElement);
 
@@ -264,10 +262,7 @@ canvas2.appendChild(renderer2.domElement);
 
 canvas3.appendChild(renderer3.domElement);
 
-
 loadMesh();
-
-
 
 (function animate() {
 
