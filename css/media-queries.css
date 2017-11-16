@@ -13,7 +13,7 @@
     .mobile-hidden {
 
         display: none;
-        
+
     }
 
 
@@ -76,28 +76,102 @@
         height: 150px;
 
     }
-    
+
     .aboutme-container {
-        
+
         width: 90vw;
-        
+
     }
-    
+
     .stats {
-        
+
         width: 90vw;
-        
+
     }
     
+    #three-container_skills {
+        
+        background-color: transparent;
+        border: transparent;
+        position: absolute;
+        width: 70%;
+        
+        
+    }
+
     .skills {
         
+        box-shadow: 0px 0px 0px;
+        background-color: transparent;
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+
+    .skills h3 {
+        
+        text-align: center;
+        background-color: rgba(252, 86, 86, 0.8);
     }
     
-    .portrait-pic {
+    .skills p {
         
+        text-align: center;
+        
+    }
+    
+    .mobile-skillicon_container_left {
+
+        width: 30%;
+        height: auto;
+        float: left;
+
+    }
+
+    .mobile-skillicon_container_right {
+
+        width: 30%;
+        height: auto;
+        float: right;
+
+    }
+    
+    .skillicon_container {
+        
+        margin: 15vw 0vw;
+        
+    }
+    
+    .skillicon_container .hover-text {
+        
+        margin: 1vw 0vw;
+        font-size: 0.5em;
+        
+    }
+
+    .skill-img {
+        
+        border-radius: 100px;
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .skills .hover-text {
+
+        font-size: 100%;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        display: block;
+        background-color: rgba(37, 37, 37, 0.58);
+
+    }
+
+    .portrait-pic {
+
         width: 200px;
         height: 200px;
-        
+
     }
 
     .mobile-section-down {
@@ -132,18 +206,16 @@
         height: 100vh;
 
     }
-    
+
     .main_container-4 {
-        
+
         width: 100vw;
         height: 100vh;
-        
+
     }
-    
-    .main_container-4_1 {
-        
-    } 
-    
+
+    .main_container-4_1 {}
+
 
     .fp-section.fp-table,
     .fp-slide.fp-table {
@@ -200,7 +272,8 @@
 
 /* Desktops and laptops ----------- */
 
-@media only screen and (min-width: 1224px) {
+@media only screen and min-width: 1025px) and (max-width: 1280px) {
+    
 
     .mobile-query {
 
@@ -208,15 +281,16 @@
 
     }
 
-
-
     .mobile-hidden {
 
         display: none;
 
     }
 
-    #particles-js {}
+    #particles-js {
+        
+        
+    }
 
     #three-container {
 
@@ -251,6 +325,54 @@
         font-size: 2em;
 
     }
+
+    .skillicon_container {
+
+        width: 40%;
+        display: inline-block;
+        margin: 0.3vw;
+        justify-content: center;
+    }
+
+    .skills .skill-img {
+
+        display: block;
+        margin: 0.5vw;
+        padding: 10px;
+        border-radius: 200px;
+        border: 2px solid #818181;
+        background-color: #818181;
+        width: 6em;
+        height: 6em;
+        transition: all ease 0.2s;
+        box-shadow: 0px 1px 30px rgba(136, 136, 136, 0);
+    }
+
+    .skills .hover-text {
+
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        font-size: 0.8em;
+        display: block;
+        background-color: rgba(37, 37, 37, 0.58);
+        padding: 0.5px;
+        opacity: 0;
+    }
+
+
+    .skills .skill-img:hover {
+
+        background-color: #e0e0e0;
+        transition: all ease 0.2s;
+        box-shadow: 0px 1px 30px rgb(75, 75, 75);
+    }
+
+    .skills .skill-img:hover + .hover-text {
+
+        opacity: 1;
+        transition: all ease 0.5s;
+    }
+
 
 
 
