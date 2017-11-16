@@ -2,6 +2,11 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
+<<<<<<< HEAD
+=======
+    .mobile-query {}
+
+>>>>>>> parent of 3a3ddaf... Media Query V4
     #wrapper {
 
         width: 100vw;
@@ -35,6 +40,44 @@
         width: 100vw;
     }
 
+<<<<<<< HEAD
+=======
+    .about-container {
+
+        display: block;
+        width: 90vw;
+        height: 30vh;
+        margin: 1vw;
+
+    }
+
+    .about-header {
+
+        font-size: 5em;
+
+    }
+
+    .about-subheader {
+
+        font-size: 1em;
+
+    }
+
+    .about-paragraph {
+
+        font-size: 0.8em;
+
+    }
+
+    .about-image {
+
+        display: none;
+        width: 150px;
+        height: 150px;
+
+    }
+
+>>>>>>> parent of 3a3ddaf... Media Query V4
     .mobile-section-down {
 
         width: 25vw;
@@ -111,10 +154,29 @@
 
 @media only screen and (min-width: 1224px) {
 
+<<<<<<< HEAD
     #particles-js {
         display: none;
     }
 
+=======
+    .mobile-query {
+        
+        display: none;
+        
+    }
+    
+    .mobile-hidden {
+        
+        display: none;
+        
+    }
+
+    #particles-js {
+        display: none;
+    }
+
+>>>>>>> parent of 3a3ddaf... Media Query V4
     #three-container {
 
         z-index: 1001;
