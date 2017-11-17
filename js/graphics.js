@@ -13,15 +13,20 @@ var renderer2 = new THREE.WebGLRenderer({
     alpha: true
 });
 
+
+//Renderer 3 - 5 for Portfolio Images
+
 var renderer3 = new THREE.WebGLRenderer({
     antialias: true,
     alpha: true
 });
 
+
 //Canvas'
 var canvas1 = document.getElementById("three-container");
 var canvas2 = document.getElementById("three-container_skills");
-var canvas3 = document.getElementById("threejs_portfolio");
+var canvas3 = document.getElementById("port_threeContainer");
+
 
 var CANVAS1_WIDTH = 500;
 var CANVAS1_HEIGHT = 500;
@@ -33,35 +38,21 @@ var CANVAS2_HEIGHT = 500;
 var CANVAS3_WIDTH = 500;
 var CANVAS3_HEIGHT = 500;
 
+//Cameras
+
 var camera1 = new THREE.PerspectiveCamera(45, CANVAS1_WIDTH / CANVAS1_HEIGHT, 0.1, 100);
 
 var camera2 = new THREE.PerspectiveCamera(45, CANVAS2_WIDTH / CANVAS2_HEIGHT, 0.1, 100);
 
 var camera3 = new THREE.PerspectiveCamera(45, CANVAS3_WIDTH / CANVAS3_HEIGHT, 0.1, 100);
 
-var mesh1 = null;
+var mesh1;
 var meAvatar;
+var portMesh;
 
 //LOADERS
 
 var JSONloader = new THREE.JSONLoader();
-
-//var daeLoader = new THREE.ColladaLoader();
-//
-//var loadingManager = new THREE.LoadingManager(function () {
-//
-//    scene2.add(meAvatar);
-//    alert('yeet');
-//
-//});
-//
-//
-//daeLoader.load("./dae/test.dae", function (collada) {
-//
-//    meAvatar = collada.scene;
-//    meAvatar.position.set(0, 0, 0);
-//
-//});
 
 function loadMesh() {
 
@@ -187,15 +178,89 @@ function setAvatar(avatarNum) {
 }
 
 
+function port_CycleMesh(caseNum) {
+
+    switch (caseNum) {
+
+        case 1:
+
+            scene3.remove(portMesh);
+
+            JSONloader.load('./json_files/port/port-mesh1.json', function (geometry, materials) {
+
+                portMesh = new THREE.SkinnedMesh(geometry, materials, false);
+
+                scene3.add(portMesh);
+
+
+            });
+
+            break;
+
+        case 2:
+
+            scene3.remove(portMesh);
+
+            JSONloader.load('./json_files/port/port-mesh2.json', function (geometry, materials) {
+
+                portMesh = new THREE.SkinnedMesh(geometry, materials, false);
+
+                scene3.add(portMesh);
+
+
+            });
+
+            break;
+
+        case 3:
+
+            scene3.remove(portMesh);
+
+            JSONloader.load('./json_files/port/port-mesh3.json', function (geometry, materials) {
+
+                portMesh = new THREE.SkinnedMesh(geometry, materials, false);
+
+                scene3.add(portMesh);
+
+            });
+
+            break;
+
+        case 4:
+
+            scene3.remove(portMesh);
+
+            JSONloader.load('./json_files/avatars/default-avatar-2.json', function (geometry, materials) {
+
+                portMesh = new THREE.SkinnedMesh(geometry, materials, false);
+
+                scene3.add(portMesh);
+
+
+            });
+
+            break;
+
+
+    }
+}
+
 
 //LOADERS - END
 
 var SPEED = 0.001;
 
 function rotateThing() {
-
-    mesh1.rotation.y -= SPEED;
-    meAvatar.rotation.y -= SPEED;
+    
+    
+    if (mesh1 != null & meAvatar != null & portMesh != null) {
+        
+        mesh1.rotation.y -= SPEED;
+        meAvatar.rotation.y -= SPEED;
+        portMesh.rotation.y -= SPEED;
+        
+    }
+    
 }
 
 
@@ -209,8 +274,8 @@ function setCanvasSize() {
     CANVAS2_WIDTH = document.getElementById('three-container_skills').offsetWidth;
     CANVAS2_HEIGHT = document.getElementById('three-container_skills').offsetHeight;
 
-    //    CANVAS3_WIDTH = document.getElementById('threejs_portfolio').offsetWidth;
-    //    CANVAS3_HEIGHT = document.getElementById('threejs_portfolio').offsetHeight;
+    CANVAS3_WIDTH = document.getElementById('port_threeContainer').offsetWidth;
+    CANVAS3_HEIGHT = document.getElementById('port_threeContainer').offsetHeight;
 
 
 };
@@ -226,9 +291,10 @@ camera2.position.x = 0;
 camera2.position.y = 4.5;
 camera2.position.z = 15;
 
-camera3.position.x = 0;
-camera3.position.y = 0;
-camera3.position.z = 0;
+camera3.position.x = 5.7;
+camera3.position.y = 5.7;
+camera3.position.z = 5.7;
+camera3.lookAt(scene3.position);
 
 //camera2.lookAt(meAvatar.position);
 
@@ -254,19 +320,27 @@ scene2.add(directionalLight2);
 var hemLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.3);
 scene2.add(hemLight);
 
+var light3 = new THREE.AmbientLight(0xffffff, 0.5); // soft white light
+light3.castShadow = true;
+scene3.add(light3);
+
+var directionalLight3 = new THREE.DirectionalLight(0xffffff, 1);
+scene3.add(directionalLight3);
+
+var hemLight1 = new THREE.HemisphereLight(0xffffff, 0xffffff, 1);
+scene3.add(hemLight1);
+
 //Append Canvas'
 
 canvas1.appendChild(renderer1.domElement);
 
 canvas2.appendChild(renderer2.domElement);
 
-if (canvas3 != null) {
+canvas3.appendChild(renderer3.domElement);
 
-    canvas3.appendChild(renderer3.domElement);
 
-}
 loadMesh();
-
+port_CycleMesh(1);
 (function animate() {
 
     requestAnimationFrame(animate);
@@ -276,7 +350,7 @@ loadMesh();
 // Rendering function
 function render() {
 
-    rotateThing();
+   rotateThing();
     setCanvasSize();
 
     //Renderer-1
@@ -301,15 +375,13 @@ function render() {
 
     // Renderer-3
 
-    if (canvas3 != null) {
 
-        renderer3.autoClear = false;
-        renderer3.clear();
-        renderer3.render(scene3, camera3);
-        renderer3.setSize(CANVAS3_WIDTH, CANVAS3_HEIGHT);
+    renderer3.autoClear = false;
+    renderer3.clear();
+    renderer3.render(scene3, camera3);
+    renderer3.setSize(CANVAS3_WIDTH, CANVAS3_HEIGHT);
 
-        camera3.aspect = CANVAS3_WIDTH / CANVAS3_HEIGHT;
-        camera3.updateProjectionMatrix();
+    camera3.aspect = CANVAS3_WIDTH / CANVAS3_HEIGHT;
+    camera3.updateProjectionMatrix();
 
-    }
 };

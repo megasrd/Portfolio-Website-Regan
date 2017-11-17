@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700|Work+Sans:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-       <link rel="stylesheet" href="jquery.fullpage.css" type="text/css">
+    <link rel="stylesheet" href="jquery.fullpage.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/media-queries.css" type="text/css">
- 
+
 
 </head>
 
@@ -24,7 +24,6 @@
         <ul>
             <li> <a href="my-game.html"> GAME ON! </a> </li>
             <li> <a href="#"> REEL </a> </li>
-            <li> <a href="portfolio.html"> PORTFOLIO </a> </li>
             <li> <a href="#section1"> HOME</a> </li>
         </ul>
     </nav>
@@ -49,7 +48,7 @@
     <div id="wrapper">
 
         <div class="main_container-1 section" data-anchor="section1">
-            
+
             <a href="#section2" class="mobile-scroll mobile-view"></a>
 
             <div class="main-content-1">
@@ -125,7 +124,7 @@
 
 
             </div>
-            
+
         </div>
 
         <div class="main_container-4 section" data-anchor="section3">
@@ -140,13 +139,13 @@
 
             <div class="skillset-container">
 
-
-
                 <div class="skills">
+
                     <h3> SKILLS </h3>
                     <p> SOFTWARE I USE </p>
 
                     <center>
+
 
                         <div class="skillicon_container">
 
@@ -169,21 +168,21 @@
 
                         </div>
 
-                        <div class="skillicon_container">
+                        <div class="desktop-view  skillicon_container">
 
                             <div class="animated skill-img sklimg-4 skillbutton" onmouseover="setAvatar(5)"> </div>
                             <p class="hover-text"> UNITY </p>
 
                         </div>
 
-                        <div class="skillicon_container">
+                        <div class="desktop-view skillicon_container">
 
                             <div class="animated skill-img sklimg-5 skillbutton" onmouseover="setAvatar(6)"> </div>
                             <p class="hover-text"> PHOTOSHOP </p>
 
                         </div>
 
-                        <div class="skillicon_container">
+                        <div class="desktop-view skillicon_container">
 
                             <div class="animated skill-img sklimg-6 skillbutton" onmouseover="setAvatar(7)"> </div>
                             <p class="hover-text"> GITHUB </p>
@@ -194,11 +193,12 @@
                 </div>
 
 
+
                 <div id="three-container_skills">
 
                 </div>
 
-                <div class="stats">
+                <div class="desktop-view stats">
                     <h3> REGAN DUTHIE </h3>
                     <p> WEB & GAME DEV </p>
 
@@ -212,13 +212,10 @@
 
                 </div>
 
-
-
             </div>
 
-
         </div>
-        
+
 
         <div class="main_container-3 section" data-anchor="section4">
 
@@ -231,33 +228,32 @@
 
                     <center>
 
-                        <div class="port-con1 three-container_port1"></div>
+                        <div id="port_threeContainer">
 
-                        <div class="port-con1"></div>
+                            <div class="port_buttons">
 
-                        <div class="port-con1"></div>
+                                <center>
 
-                        <div class="port-con1"></div>
+                                    <input class="port_button" type="button" value="TEST" onclick="port_CycleMesh(1)">
 
-                        <div class="port-con1"></div>
+                                    <input class="port_button" type="button" value="TEST" onclick="port_CycleMesh(2)">
 
-                        <div class="port-con1"></div>
+                                    <input class="port_button" type="button" value="TEST" onclick="port_CycleMesh(3)">
 
-                        <div class="port-con1"></div>
+                                    <input class="port_button" type="button" value="TEST" onclick="port_CycleMesh(4)">
 
-                        <div class="port-con1"></div>
-                        
-                         <div class="port-con1"></div>
-                        
-                         <div class="port-con1"></div>
-                        
+                                    <input class="port_button" type="button" value="TEST" onclick="port_CycleMesh(5)">
+
+                                </center>
+
+                            </div>
+
+                        </div>
 
                     </center>
 
 
                 </div>
-
-                <input href="portfolio.html " class="normal-button" type="button" value="SEE MORE">
 
             </center>
 
@@ -269,17 +265,17 @@
         <div class="main_container-5 section" data-anchor="section5">
 
             <center>
-                
-                
+
+
 
                 <div class="timeline-container">
-                    
-                    
+
+
 
                     <h2 class="page-header-2"> EDUCATION </h2>
 
                     <p class="timeline-info"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniamA. </p>
-                    
+
                     <div class="timeline_line"></div>
 
                     <div class="time-info ti-right_align">
@@ -311,12 +307,11 @@
             </center>
 
         </div>
+    
 
         <div class="main_container-5_1 section" data-anchor="section5.1">
 
             <center>
-                
-                
 
                 <div class="timeline-container">
 
@@ -401,6 +396,7 @@
 <script src="js/port-rotate.js"></script>
 
 <script>
+    
     $(document).ready(function() {
 
         $('#wrapper').fullpage();
@@ -417,6 +413,7 @@
             $(this).removeClass('pulse');
         }
     );
+    
 </script>
 
 <footer>

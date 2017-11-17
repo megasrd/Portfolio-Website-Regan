@@ -208,12 +208,10 @@ body {
 
 #three-container_skills {
 
-    margin: 0vw 3vw;
     display: inline-block;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid white;
-    width: 20vw;
-    height: 75vh;
+
 
 }
 
@@ -393,14 +391,7 @@ body {
 
 }
 
-.portfolio-container {
-    
-    margin: 1vw;
-    overflow: auto;
-    width: 90vw;
-    
 
-}
 
 .port-con1 {
     
@@ -410,6 +401,7 @@ body {
     width: 15vw;
     height: 28vh;
     margin: 0.1vw;
+    transition: 0.5s all ease;
 
 }
 
@@ -774,4 +766,58 @@ font-family: 'Raleway', sans-serif;*/
     background-color: rgba(255, 28, 28, 0.54);
     width: 1vw;
     height: 180vh;
+}
+
+.portfolio-container {
+       
+    width: 90vw;
+    
+}
+
+#port_threeContainer {
+    
+    text-align: center;
+    height: 70vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.47);
+    box-shadow: 0px 1px 30px #888888;
+}
+
+#port_threeContainer canvas {
+    
+    position: absolute;
+    left: 20vw;
+    
+}
+
+
+.port_buttons {
+    position: relative;
+    background-color: rgba(229, 72, 72, 0.62);
+    float: left;
+    width: 10vw;
+    height: 70vh;
+    z-index: 5000;
+}
+
+.port_button {
+    
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 8vw;
+    height: 4vh;
+    font-size: 1em;
+    display: block;
+    margin: 3.8vw 0vw;
+    transition: all ease 0.3s;
+}
+
+.port_button:hover {
+    
+    transition: all ease 0.3s;
+    color: white;
+    border: 1px solid rgba(216, 58, 58, 0.78);
+    background-color: rgba(216, 58, 58, 0.78);
+    
 }
