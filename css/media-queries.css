@@ -1,12 +1,231 @@
+/* Mobile - 420px Width */
+
+@media only screen and (max-width: 420px) {
+    
+    #particles-js {
+        
+        display: none;
+        
+    }
+    
+    .desktop-view {
+        
+        display: none;
+        
+    }
+
+
+    .mobile-view {
+        
+        
+    }
+    
+    .mobile-scroll {
+        
+        z-index: 5000;
+        left: 35vw;
+        bottom: 5vw;
+        position: absolute;
+        width: 30vw;
+        height: 9vh;
+        background-color: rgba(178, 34, 34, 0.53);
+        
+    }
+
+    .side-nav {
+
+        display: none;
+
+    }
+
+    .main_nav-bar {
+
+        display: none;
+
+    }
+
+    .main_nav-bar ul li a {
+
+        font-size: 1em;
+        margin: 0.2vw 1vw;
+
+    }
+
+    .main_container-1 {}
+
+
+    .main-content-1 {
+
+        position: absolute;
+        top: 10vw;
+        left: 5vw;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.32);
+        width: 80%;
+
+    }
+
+    #three-container {
+
+        position: absolute;
+        top: 40vh;
+        left: 5vw;
+        width: 90%;
+        height: 60vh;
+
+    }
+
+    .main-content-1 .head-text-1 {
+        padding: 0;
+        margin: 0.1vw;
+        font-size: 1.5em;
+
+
+    }
+
+
+    .main-content-1 .head-text-2 {
+
+        margin: 0;
+        font-size: 5em;
+
+    }
+
+    .text-wrap {
+
+        display: block;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    .main_nav-bar ul li a {
+
+        font-size: 1em;
+    }
+
+    .page-header-2 {
+
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.56);
+        padding: 0.5vw;
+        font-size: 3.5em;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+
+    }
+    
+    .main-content-2 {
+        
+        width: 95vw;
+        
+        
+    }
+
+    .about-header {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 3em;
+        margin: 0.1vw;
+
+    }
+
+    .about-container {
+        
+        display: block;
+        width: 80vw;
+        margin: 1vh 5vw;
+        box-shadow: 0px 1px 30px #888888;
+
+    }
+
+    .about-subheader {
+
+        margin: 0.1vw;
+        font-size: 1em;
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
+    .about-image {
+
+        height: 100px;
+        width: 100px;
+        margin: 1vw;
+
+    }
+
+    .about-paragraph {
+
+        margin: 0.1vw;
+        font-size: 0.8em;
+        font-family: sans-serif;
+
+    }
+
+    .portrait-pic {
+
+        width: 10em;
+        height: 10em;
+
+    }
+
+    .skills .skill-img {
+
+        width: 4em;
+        height: 4em;
+
+    }
+
+    .skills {
+
+        height: 65vh;
+        width: 26vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats {
+
+        height: 65vh;
+        width: 26vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats p:nth-child(4) {
+
+        font-size: 1.1em;
+
+    }
+
+    #three-container_skills {
+
+        height: 68vh;
+        width: 24vw;
+        margin: 0vw 1vw;
+    }
+
+
+}
+
+
 /* Laptops Screens */
 
 @media only screen and (min-width: 1020px) {
+
+    .mobile-view {
+
+        display: none;
+
+    }
 
     .main-content-1 .head-text-1 {
 
         padding: 0;
         margin: 0.1vw;
-        font-size: 1.8em;;
+        font-size: 1.8em;
+        ;
 
     }
 
@@ -19,7 +238,6 @@
     }
 
     .main_nav-bar {
-
         display: block;
 
     }
@@ -30,7 +248,7 @@
     }
 
     .page-header-2 {
-        
+
         display: inline-block;
         background-color: rgba(255, 0, 0, 0.56);
         padding: 0.5vw;
@@ -127,10 +345,130 @@
 
 @media only screen and (min-width: 1220px) {
 
+    .mobile-view {
+
+        display: none;
+
+    }
+
+    .main-content-1 .head-text-1 {
+
+        padding: 0;
+        margin: 0.1vw;
+        font-size: 3em;
+        ;
+
+    }
+
+
+    .main-content-1 .head-text-2 {
+
+        margin: 0;
+        font-size: 14em;
+
+    }
+
     .main_nav-bar {
 
         display: block;
 
+    }
+
+    .main_nav-bar ul li a {
+
+        font-size: 1.5em;
+    }
+
+    .page-header-2 {
+
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.56);
+        padding: 0.5vw;
+        font-size: 5em;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+
+    }
+
+    .about-header {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 4.5em;
+        margin: 0.1vw;
+
+    }
+
+    .about-container {
+
+        width: 18vw;
+        margin: 0vh 0.5vw;
+
+
+    }
+
+    .about-subheader {
+
+        margin: 0.1vw;
+        font-size: 1.5em;
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
+    .about-image {
+
+        height: 200px;
+        width: 200px;
+        margin: 1vw;
+
+    }
+
+    .about-paragraph {
+
+        margin: 0.1vw;
+        font-size: 1em;
+        font-family: sans-serif;
+
+    }
+
+    .portrait-pic {
+
+        width: 15em;
+        height: 15em;
+
+    }
+
+    .skills .skill-img {
+
+        width: 5.5em;
+        height: 5.5em;
+
+    }
+
+    .skills {
+
+        height: 65vh;
+        width: 20vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats {
+
+        height: 65vh;
+        width: 20vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats p:nth-child(4) {
+
+        font-size: 1.1em;
+
+    }
+
+    #three-container_skills {
+
+        height: 68vh;
+        width: 24vw;
+        margin: 0vw 1vw;
     }
 
 }
@@ -138,6 +476,12 @@
 /* Moerse Screens */
 
 @media only screen and (min-width: 1824px) {
+
+    .mobile-view {
+
+        display: none;
+
+    }
 
     .main_nav-bar {
 

@@ -226,9 +226,9 @@ camera2.position.x = 0;
 camera2.position.y = 4.5;
 camera2.position.z = 15;
 
-//camera3.position.x = 0;
-//camera3.position.y = 0;
-//camera3.position.z = 0;
+camera3.position.x = 0;
+camera3.position.y = 0;
+camera3.position.z = 0;
 
 //camera2.lookAt(meAvatar.position);
 
