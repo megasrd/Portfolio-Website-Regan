@@ -1,0 +1,148 @@
+/* Laptops Screens */
+
+@media only screen and (min-width: 1020px) {
+
+    .main-content-1 .head-text-1 {
+
+        padding: 0;
+        margin: 0.1vw;
+        font-size: 1.8em;;
+
+    }
+
+
+    .main-content-1 .head-text-2 {
+
+        margin: 0;
+        font-size: 10em;
+
+    }
+
+    .main_nav-bar {
+
+        display: block;
+
+    }
+
+    .main_nav-bar ul li a {
+
+        font-size: 1em;
+    }
+
+    .page-header-2 {
+        
+        display: inline-block;
+        background-color: rgba(255, 0, 0, 0.56);
+        padding: 0.5vw;
+        font-size: 3.5em;
+        font-family: 'Work Sans', sans-serif;
+        color: white;
+
+    }
+
+    .about-header {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5em;
+        margin: 0.1vw;
+
+    }
+
+    .about-container {
+
+        width: 18vw;
+        margin: 0vh 0.5vw;
+
+
+    }
+
+    .about-subheader {
+
+        margin: 0.1vw;
+        font-size: 1em;
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
+    .about-image {
+
+        height: 150px;
+        width: 150px;
+        margin: 1vw;
+
+    }
+
+    .about-paragraph {
+
+        margin: 0.1vw;
+        font-size: 1em;
+        font-family: sans-serif;
+
+    }
+
+    .portrait-pic {
+
+        width: 10em;
+        height: 10em;
+
+    }
+
+    .skills .skill-img {
+
+        width: 4em;
+        height: 4em;
+
+    }
+
+    .skills {
+
+        height: 65vh;
+        width: 26vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats {
+
+        height: 65vh;
+        width: 26vw;
+        margin: 0vw 1vw;
+    }
+
+    .stats p:nth-child(4) {
+
+        font-size: 1.1em;
+
+    }
+
+    #three-container_skills {
+
+        height: 68vh;
+        width: 24vw;
+        margin: 0vw 1vw;
+    }
+
+}
+
+/* Desktop Screens */
+
+@media only screen and (min-width: 1220px) {
+
+    .main_nav-bar {
+
+        display: block;
+
+    }
+
+}
+
+/* Moerse Screens */
+
+@media only screen and (min-width: 1824px) {
+
+    .main_nav-bar {
+
+        display: block;
+
+    }
+
+}

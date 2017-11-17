@@ -206,6 +206,17 @@ body {
     background-color: rgba(240, 248, 255, 0.49);
 }
 
+#three-container_skills {
+
+    margin: 0vw 3vw;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    width: 20vw;
+    height: 75vh;
+
+}
+
 
 .main-content-1 {
 
@@ -383,42 +394,22 @@ body {
 }
 
 .portfolio-container {
-
-    justify-content: center;
-    margin: 0;
+    
+    margin: 1vw;
     overflow: auto;
     width: 90vw;
-    height: 60vh;
+    
 
 }
 
 .port-con1 {
+    
     box-shadow: 0px 1px 10px #888888;
-    float: left;
+    display: inline-block;
     background-color: #efefef;
-    width: 20em;
-    height: 32.5em;
-    margin: 0.5vw;
-
-}
-
-.port-con2 {
-    box-shadow: 0px 1px 10px #888888;
-    float: left;
-    background-color: #efefef;
-    width: 16.9em;
-    height: 15.6em;
-    margin: 0.5vw;
-
-}
-
-.port-con3 {
-    box-shadow: 0px 1px 10px #888888;
-    float: left;
-    background-color: #efefef;
-    width: 34.6em;
-    height: 15.6em;
-    margin: 0.5vw;
+    width: 15vw;
+    height: 28vh;
+    margin: 0.1vw;
 
 }
 
@@ -674,16 +665,7 @@ font-family: 'Raleway', sans-serif;*/
 
 }
 
-#three-container_skills {
 
-    margin: 0vw 3vw;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid white;
-    width: 20vw;
-    height: 75vh;
-
-}
 
 .time-info {
     padding: 0.5vw;
@@ -783,4 +765,13 @@ font-family: 'Raleway', sans-serif;*/
     
     margin: 1vw 2vw;
     
+}
+
+.timeline_line {
+    
+    left: 50vw;
+    position: absolute;
+    background-color: rgba(255, 28, 28, 0.54);
+    width: 1vw;
+    height: 180vh;
 }

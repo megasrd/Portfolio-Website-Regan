@@ -208,9 +208,9 @@ function setCanvasSize() {
 
     CANVAS2_WIDTH = document.getElementById('three-container_skills').offsetWidth;
     CANVAS2_HEIGHT = document.getElementById('three-container_skills').offsetHeight;
-    
-    CANVAS3_WIDTH = document.getElementById('threejs_portfolio').offsetWidth;
-    CANVAS3_HEIGHT = document.getElementById('threejs_portfolio').offsetHeight;
+
+    //    CANVAS3_WIDTH = document.getElementById('threejs_portfolio').offsetWidth;
+    //    CANVAS3_HEIGHT = document.getElementById('threejs_portfolio').offsetHeight;
 
 
 };
@@ -226,9 +226,9 @@ camera2.position.x = 0;
 camera2.position.y = 4.5;
 camera2.position.z = 15;
 
-camera3.position.x = 0;
-camera3.position.y = 0;
-camera3.position.z = 0;
+//camera3.position.x = 0;
+//camera3.position.y = 0;
+//camera3.position.z = 0;
 
 //camera2.lookAt(meAvatar.position);
 
@@ -260,8 +260,11 @@ canvas1.appendChild(renderer1.domElement);
 
 canvas2.appendChild(renderer2.domElement);
 
-canvas3.appendChild(renderer3.domElement);
+if (canvas3 != null) {
 
+    canvas3.appendChild(renderer3.domElement);
+
+}
 loadMesh();
 
 (function animate() {
@@ -295,14 +298,18 @@ function render() {
 
     camera2.aspect = CANVAS2_WIDTH / CANVAS2_HEIGHT;
     camera2.updateProjectionMatrix();
-    
-    //Renderer-3
 
-    renderer3.autoClear = false;
-    renderer3.clear();
-    renderer3.render(scene2, camera2);
-    renderer3.setSize(CANVAS2_WIDTH, CANVAS2_HEIGHT);
+    // Renderer-3
 
-    camera3.aspect = CANVAS2_WIDTH / CANVAS2_HEIGHT;
-    camera3.updateProjectionMatrix();
+    if (canvas3 != null) {
+
+        renderer3.autoClear = false;
+        renderer3.clear();
+        renderer3.render(scene3, camera3);
+        renderer3.setSize(CANVAS3_WIDTH, CANVAS3_HEIGHT);
+
+        camera3.aspect = CANVAS3_WIDTH / CANVAS3_HEIGHT;
+        camera3.updateProjectionMatrix();
+
+    }
 };
