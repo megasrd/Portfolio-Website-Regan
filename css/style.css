@@ -605,11 +605,9 @@ font-family: 'Raleway', sans-serif;*/
 
 
 .portrait-pic {
-
-
-    width: 15em;
-    height: 15em;
-    background-color: dimgrey;
+    background-image: url(../images/portfolio_me.png);
+    background-size: 100%;
+    background-position: center;
     border-radius: 300px;
 
 }
@@ -621,17 +619,13 @@ font-family: 'Raleway', sans-serif;*/
     display: inline-block;
     background-color: #B3B3B3;
     width: 19vw;
-    height: 68vh;
     padding: 1.5vw;
 }
 
 .stats h3 {
 
-    text-align: left;
     color: white;
     font-family: 'Work Sans', sans-serif;
-    font-size: 2em;
-    margin: 0.2vw;
 
 }
 
@@ -656,8 +650,6 @@ font-family: 'Raleway', sans-serif;*/
 
 
 }
-
-
 
 .time-info {
     padding: 0.5vw;

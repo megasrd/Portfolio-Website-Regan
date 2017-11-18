@@ -127,22 +127,44 @@
 
         </div>
 
-        <div class="main_container-4 section" data-anchor="section3">
-
+        <div class="aboutme_subsection mobile-view">
+            
             <center>
 
                 <h2 class="page-header-2"> ABOUT ME </h2>
 
             </center>
+            
+                    <div class="mobile-view mobile-stats">
 
+                    <h3> REGAN DUTHIE </h3>
+                    <p> WEB & GAME DEV </p>
 
+                    <center>
+
+                        <div class="portrait-pic"> </div>
+
+                    </center>
+
+                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+
+                </div>
+
+        </div>
+
+        <div class="main_container-4 section" data-anchor="section3">
+            
+            <center class="desktop-view">
+
+                <h2 class="page-header-2"> ABOUT ME </h2>
+
+            </center>
+
+            <h3 class="mobile-view"> SKILLS </h3>
+            <h4 class="mobile-view"> SOFTWARE I USE </h4>
+            
 
             <div class="skillset-container">
-
-                
-                <h3 class="mobile-view"> SKILLS </h3>
-                <p class="mobile-view"> SOFTWARE I USE </p>
-
 
                 <div class="mobile-view mobile-skills skill-right">
 
@@ -255,13 +277,12 @@
                     </center>
                 </div>
 
-
-
                 <div id="three-container_skills">
 
                 </div>
 
                 <div class="desktop-view stats">
+
                     <h3> REGAN DUTHIE </h3>
                     <p> WEB & GAME DEV </p>
 
@@ -272,13 +293,32 @@
                     </center>
 
                     <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+                    
+                    <h4> MY INTERESTS </h4>
+                    
+                    <center>
+                    
+                    <img class="interest_img" src="images/images_interest-icon1.png">
+                    
+                    <img class="interest_img" src="images/images_interest-icon2.png">
+                    
+                    <img class="interest_img" src="images/images_interest-icon3.png">
+                    
+                    <img class="interest_img" src="images/images_interest-icon4.png">
+                    
+                    <img class="interest_img" src="images/images_interest-icon5.png">
+                    
+                    
+                    
+                    <input value="RESUME" type="button" href="#" class="resume_button">
+                        
+                    </center>
 
                 </div>
 
             </div>
 
         </div>
-
 
         <div class="main_container-3 section" data-anchor="section4">
 
@@ -461,7 +501,21 @@
 <script>
     //If Desktop Size Run fullpage.js
 
-    (function mediaSize() {
+//    (function mediaSize() {
+//
+//        if (window.matchMedia('(min-width: 1220px)').matches) {
+//
+//            $(document).ready(function() {
+//
+//                $('#wrapper').fullpage();
+//
+//            });
+//
+//        }
+//
+//    })();
+    
+function mediaSize() {
 
         if (window.matchMedia('(min-width: 1220px)').matches) {
 
@@ -473,7 +527,9 @@
 
         }
 
-    })();
+    }
+    
+mediaSize();
 
 
 

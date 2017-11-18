@@ -216,7 +216,7 @@ function port_CycleMesh(caseNum) {
 
             scene3.remove(portMesh);
 
-            JSONloader.load('./json_files/port/port-mesh3.json', function (geometry, materials) {
+            JSONloader.load('gjson_files/port/port-mesh3.json', function (geometry, materials) {
 
                 portMesh = new THREE.SkinnedMesh(geometry, materials, false);
 
