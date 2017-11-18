@@ -139,7 +139,70 @@
 
             <div class="skillset-container">
 
-                <div class="skills">
+                
+                <h3 class="mobile-view"> SKILLS </h3>
+                <p class="mobile-view"> SOFTWARE I USE </p>
+
+
+                <div class="mobile-view mobile-skills skill-right">
+
+                    <center>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-4 skillbutton" onmouseover="setAvatar(5)"> </div>
+                            <p class="hover-text"> UNITY </p>
+
+                        </div>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-5 skillbutton" onmouseover="setAvatar(6)"> </div>
+                            <p class="hover-text"> PHOTOSHOP </p>
+
+                        </div>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-6 skillbutton" onmouseover="setAvatar(7)"> </div>
+                            <p class="hover-text"> GITHUB </p>
+
+                        </div>
+
+                    </center>
+
+                </div>
+
+                <div class="mobile-view mobile-skills skill-left">
+
+                    <center>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-1 skillbutton" onmouseover="setAvatar(2)"> </div>
+                            <p class="hover-text"> BLENDER </p>
+
+                        </div>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-2 skillbutton" onmouseover="setAvatar(3)"> </div>
+                            <p class="hover-text"> ILLUSTRATOR </p>
+
+                        </div>
+
+                        <div class="skillicon_container">
+
+                            <div class="animated skill-img sklimg-3 skillbutton" onmouseover="setAvatar(4)"> </div>
+                            <p class="hover-text"> VSCODE </p>
+
+                        </div>
+
+                    </center>
+
+                </div>
+
+                <div class="desktop-view skills">
 
                     <h3> SKILLS </h3>
                     <p> SOFTWARE I USE </p>
@@ -307,7 +370,7 @@
             </center>
 
         </div>
-    
+
 
         <div class="main_container-5_1 section" data-anchor="section5.1">
 
@@ -396,12 +459,22 @@
 <script src="js/port-rotate.js"></script>
 
 <script>
-    
-    $(document).ready(function() {
+    //If Desktop Size Run fullpage.js
 
-        $('#wrapper').fullpage();
+    (function mediaSize() {
 
-    });
+        if (window.matchMedia('(min-width: 1220px)').matches) {
+
+            $(document).ready(function() {
+
+                $('#wrapper').fullpage();
+
+            });
+
+        }
+
+    })();
+
 
 
     $(".skill-img ").hover(
@@ -413,7 +486,6 @@
             $(this).removeClass('pulse');
         }
     );
-    
 </script>
 
 <footer>

@@ -50,6 +50,24 @@
 
     .main_container-1 {}
 
+    .main_container-2 {
+
+        height: auto;
+
+    }
+
+    .main_container-3 {
+
+        height: 100vh;
+
+    }
+
+    .main_container-4 {
+
+        height: 100vh;
+
+    }
+
 
     .main-content-1 {
 
@@ -123,13 +141,13 @@
         font-size: 3.5em;
         font-family: 'Work Sans', sans-serif;
         color: white;
+        margin: 1vw;
 
     }
 
     .main-content-2 {
 
         width: 95vw;
-
 
     }
 
@@ -143,9 +161,10 @@
 
     .about-container {
 
+        padding: 2vw;
         display: block;
         width: 80vw;
-        margin: 1vh 5vw;
+        margin: 5vh 5vw;
         box-shadow: 0px 1px 30px #888888;
 
     }
@@ -219,6 +238,89 @@
         margin: 0vw 1vw;
 
     }
+
+    .skillset-container {
+
+        
+        width: 90%;
+        height: 70vh;
+
+    }
+    
+    .skillset-container .mobile-view h3 {
+        
+        display: block;
+        
+    }
+
+
+    .skill-left {
+        
+        position: absolute;
+        left: 5vw;
+        width: 20%;
+
+    }
+    
+    .skill-right {
+        
+        position: absolute;
+        right: 5vw;
+        width: 20%;
+        
+    }
+
+
+    .mobile-skills {
+        
+        top: 28vh;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2vw;
+        
+    }
+
+    .skillicon_container {
+
+        display: block;
+        justify-content: center;
+        width: 100%;
+    }
+
+     .mobile-skills .skill-img {
+
+        display: block;
+        margin: 0.5vw;
+        padding: 10px;
+        border-radius: 200px;
+        border: 2px solid #818181;
+        background-color: #818181;
+        width: 12vw;
+        height: 7vh;
+        transition: all ease 0.2s;
+        box-shadow: 0px 1px 30px rgba(136, 136, 136, 0);
+    }
+
+    .mobile-skills .hover-text {
+
+        font-family: 'Nunito', sans-serif;
+        color: #000000;
+        font-size: 3vw;
+        display: block;
+        opacity: 1;
+    }
+
+
+    .mobile-skills .skill-img:hover {
+
+        background-color: #e0e0e0;
+        transition: all ease 0.2s;
+        box-shadow: 0px 1px 30px rgb(75, 75, 75);
+    }
+
+
+
+
 
 }
 
