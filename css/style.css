@@ -430,11 +430,8 @@ body {
 
 .skills h3 {
 
-    text-align: left;
     color: white;
     font-family: 'Work Sans', sans-serif;
-    font-size: 3em;
-    margin: 0;
 
 }
 
@@ -761,55 +758,51 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .portfolio-container {
-       
-    width: 90vw;
+    
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70vw;
+    height: auto;
+    box-shadow: 0px 1px 30px #888888;
     
 }
 
 #port_threeContainer {
     
-    text-align: center;
-    height: 70vh;
-    width: 70vw;
-    background-color: rgba(255, 255, 255, 0.47);
-    box-shadow: 0px 1px 30px #888888;
-}
-
-#port_threeContainer canvas {
-    
-    position: absolute;
-    left: 20vw;
-    
-}
-
-
-.port_buttons {
-    position: relative;
-    background-color: rgba(229, 72, 72, 0.62);
     float: left;
-    width: 10vw;
-    height: 70vh;
-    z-index: 5000;
+    height: 65vh;
+    width: 37vw;
+    background-color: rgba(255, 255, 255, 0.47);
 }
 
-.port_button {
+.port_imageGallery {
     
-    color: white;
-    border: 1px solid white;
-    background-color: transparent;
-    width: 8vw;
-    height: 4vh;
-    font-size: 1em;
-    display: block;
-    margin: 3.8vw 0vw;
-    transition: all ease 0.3s;
+    float: left;
+    width: 32vw;
+    
 }
 
-.port_button:hover {
+.port_image {
     
-    transition: all ease 0.3s;
-    color: white;
-    border: 1px solid rgba(216, 58, 58, 0.78);
-    background-color: rgba(216, 58, 58, 0.78);
+    display: inline-block;
+    width: 10.3vw;
+    
+}
+
+
+
+.fp-tableCell {
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.skl-lvl1 {
+    
+    background-image: url(../images/images_level-icon1.png);
     
 }
