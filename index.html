@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Exo+2:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="jquery.fullpage.css" type="text/css">
+    <link rel="stylesheet" href="css/lightgallery.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/media-queries.css" type="text/css">
@@ -22,7 +23,7 @@
 
     <nav class="main_nav-bar">
         <ul>
-            <li> <a href="my-game.html"> GAME ON! </a> </li>
+            <span class="hide-me"><li> <a href="my-game.html"> GAME ON! </a> </li></span>
             <li> <a href="#"> REEL </a> </li>
             <li> <a href="#section1"> HOME</a> </li>
         </ul>
@@ -298,7 +299,7 @@
                 </div>
 
                 <div id="three-container_skills">
-                    
+
                 </div>
 
                 <div class="desktop-view stats">
@@ -349,6 +350,46 @@
 
                     <div class="port_imageGallery">
 
+                        <div id="lightgallery">
+
+                    <a href="./images/portfolio/port-image-1.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-1.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-2.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-2.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-3.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-3.png">
+                    </a>
+
+
+                     <a href="./images/portfolio/port-image-4.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-4.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-5.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-5.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-6.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-6.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-7.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-7.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-8.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-8.png">
+                    </a>
+                            
+                     <a href="./images/portfolio/port-image-9.png">
+                        <img class="port_image" src="./images/portfolio/thumb_port-image-9.png">
+                    </a>
+                            <!--
+
                         <img src="images/portfolio_me.png" class="port_image">
 
                         <img src="images/portfolio_me.png" class="port_image animated">
@@ -366,6 +407,9 @@
                         <img src="images/portfolio_me.png" class="port_image">
 
                         <img src="images/portfolio_me.png" class="port_image">
+-->
+
+                        </div>
 
                     </div>
 
@@ -492,20 +536,20 @@
             </center>
 
             <div class="contact_footer">
-                
+
                 <p> CELL: XXXXXXXXXX </p>
-                
+
                 <p> EMAIL: XXXXXXXXX </p>
 
                 <center>
 
-                    <img src="images/hover_skill-icon1.png" class="contact-icon animated">
+                    <a href="https://web.facebook.com/reagan.duthie"><img src="images/social_media-1.png" class="contact-icon animated"></a>
 
-                    <img src="images/hover_skill-icon1.png" class="contact-icon animated">
+                    <img src="images/social_media-2.png" class="contact-icon animated">
 
-                    <img src="images/hover_skill-icon1.png" class="contact-icon animated">
+                    <a href="https://github.com/megasrd"><img src="images/social_media-3.png" class="contact-icon animated"></a>
 
-                    <img src="images/hover_skill-icon1.png" class="contact-icon animated">
+                    <a href="https://www.instagram.com/reganjdee/?hl=en"><img src="images/social_media-4.png" class="contact-icon animated"> </a>
 
                 </center>
 
@@ -521,9 +565,19 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="jquery.fullpage.min.js"></script>
 
+<script src="js/lightgallery/lightgallery.js">
+</script>
+
+<script src="js/lightgallery/lg-thumbnail.js">
+</script>
+
+<script src="js/lightgallery/lg-fullscreen.js">
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.js"></script>
 
 <script src="js/three-js_loaders/ColladaLoader.js"></script>
+
+
 
 <script src="js/particles.js">
 </script>
@@ -565,6 +619,12 @@
 
     mediaSize();
 
+
+    //lightgallery.js
+
+    $(document).ready(function() {
+        $('#lightgallery').lightGallery();
+    });
 
     //port_image
 
