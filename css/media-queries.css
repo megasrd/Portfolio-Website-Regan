@@ -1,6 +1,6 @@
 /* Mobile - 420px Width */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 425px) {
 
     #particles-js {
 
@@ -69,9 +69,6 @@
         height: 100vh;
 
     }
-
-
-
 
     .main-content-1 {
 
@@ -151,7 +148,7 @@
         padding: 2vw;
         display: block;
         width: 80vw;
-        margin: 5vh 5vw;
+        margin: 2vh 5vw;
         box-shadow: 0px 1px 30px #888888;
 
     }
@@ -166,8 +163,8 @@
 
     .about-image {
 
-        height: 100px;
-        width: 100px;
+        height: 120px;
+        width: 120px;
         margin: 1vw;
 
     }
@@ -514,26 +511,26 @@
 
 /* Tablet  Screens */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 500px) and (max-width: 768px) {
 
-    
+
+    .hide-game {
+
+        display: none;
+    }
+
     .mobile-view {
 
         display: none;
 
     }
-    
-    .desktop-view {
-        
-        display: none;
-    }
+
 
     .main-content-1 .head-text-1 {
 
         padding: 0;
         margin: 0.1vw;
         font-size: 2em;
-        ;
 
     }
 
@@ -557,7 +554,7 @@
         position: fixed;
         z-index: 9000;
         right: 1.5vw;
-        bottom: 40vw;
+        bottom: 25vw;
     }
 
     .main_nav-bar ul li a {
@@ -593,7 +590,7 @@
     .about-container {
 
         width: 18vw;
-        margin: 5vh 0.2vw;
+        margin: 5vh 0.7vw;
 
 
     }
@@ -601,15 +598,15 @@
     .about-subheader {
 
         margin: 0.1vw;
-        font-size: 1em;
+        font-size: 0.7em;
         font-family: 'Work Sans', sans-serif;
 
     }
 
     .about-image {
 
-        height: 100px;
-        width: 100px;
+        height: 90px;
+        width: 90px;
         margin: 1vw;
 
     }
@@ -617,23 +614,23 @@
     .about-paragraph {
 
         margin: 0.1vw;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-family: sans-serif;
 
     }
 
     .portrait-pic {
 
-        width: 10em;
-        height: 10em;
+        width: 6em;
+        height: 6em;
 
     }
 
     .skills .skill-img {
 
-        width: 3em;
-        height: 3em;
-        margin: 2vw 0.2vw;
+        width: 2.3em;
+        height: 2.3em;
+        margin: 0.6vw 0.1vw;
 
     }
 
@@ -659,10 +656,10 @@
 
     .stats p:nth-child(4) {
 
-        font-size: 80%;
+        font-size: 73%;
 
     }
-    
+
 
     .skills h3 {
 
@@ -692,7 +689,7 @@
     #three-container {
 
         width: 45%;
-        height: 70vh;
+        height: 90vh;
 
     }
 
@@ -715,7 +712,7 @@
 
         color: rgb(0, 0, 0);
         margin: 0.6vw;
-        font-size: 2vw;
+        font-size: 1.2vw;
         padding: 0.6vw 2vw;
         display: block;
         border: 1px solid black;
@@ -818,7 +815,7 @@
     #port_threeContainer {
 
         float: left;
-        height: 40.1vh;
+        height: 59vh;
         width: 37vw;
         background-color: rgba(255, 255, 255, 0.47);
     }
@@ -839,12 +836,19 @@
 
 
 
+
 }
 
 
-/* Laptops Screens */
+/* Laptop Screens */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .hide-game {
+
+        display: inline;
+
+    }
 
     .mobile-view {
 
@@ -857,7 +861,6 @@
         padding: 0;
         margin: 0.1vw;
         font-size: 1.8em;
-        ;
 
     }
 
@@ -870,6 +873,7 @@
     }
 
     .main_nav-bar {
+
         display: block;
 
     }
@@ -1072,13 +1076,20 @@
 
 }
 
+
 /* Desktop Screens */
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1440px) and (max-width: 2560px) {
 
     .mobile-view {
 
         display: none;
+
+    }
+
+    .hide-game {
+
+        display: inline;
 
     }
 
@@ -1129,8 +1140,7 @@
     .about-header {
 
         font-family: 'Raleway', sans-serif;
-        font-size: 4.5em;
-        margin: 0.1vw;
+        font-size: 4.2vw;
 
     }
 
@@ -1145,15 +1155,15 @@
     .about-subheader {
 
         margin: 0.1vw;
-        font-size: 1.5em;
+        font-size: 1.1em;
         font-family: 'Work Sans', sans-serif;
 
     }
 
     .about-image {
 
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         margin: 1vw;
 
     }
@@ -1212,7 +1222,7 @@
 
     .stats p:nth-child(4) {
 
-        font-size: 0.9vw;
+        font-size: 1.05vw;
         margin: 0.8vw 0.8vw;
     }
 
@@ -1271,16 +1281,23 @@
     }
 
     .time-info {
+
         padding: 0.5vw;
         display: block;
-        width: 22vw;
+        width: 30vw;
         background-color: #fafafa;
+
+    }
+
+    .time-info img {
+
+        height: 20vh;
 
     }
 
     .time-info p {
 
-        font-size: 80%;
+        font-size: 100%;
 
     }
 
@@ -1380,7 +1397,8 @@
 
 /* Moerse Screens */
 
-@media only screen and (min-width: 2560px) {
+/*
+@media only screen and (max-width: 2560px) {
 
     .mobile-view {
 
@@ -1388,19 +1406,36 @@
 
     }
 
+    .hide-game {
+
+        display: inline;
+
+    }
+    
+    .side-nav {
+        
+        bottom: 40vh;
+        
+    }
+
     .main-content-1 .head-text-1 {
 
         padding: 0;
-        margin: 0.1vw;
-        font-size: 3em;
-        ;
+        margin: 0.5vw;
+        font-size: 3.5em;
 
     }
 
+    .text-wrap {
+        
+        margin: 0.5vw;
+        font-size: 350%;
+
+    }
 
     .main-content-1 .head-text-2 {
 
-        margin: 0;
+        margin: 0.5vw;
         font-size: 14em;
 
     }
@@ -1431,8 +1466,7 @@
     .about-header {
 
         font-family: 'Raleway', sans-serif;
-        font-size: 4.5em;
-        margin: 0.1vw;
+        font-size: 4.2vw;
 
     }
 
@@ -1447,15 +1481,15 @@
     .about-subheader {
 
         margin: 0.1vw;
-        font-size: 1.5em;
+        font-size: 1.1em;
         font-family: 'Work Sans', sans-serif;
 
     }
 
     .about-image {
 
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         margin: 1vw;
 
     }
@@ -1514,7 +1548,7 @@
 
     .stats p:nth-child(4) {
 
-        font-size: 0.9vw;
+        font-size: 1.05vw;
         margin: 0.8vw 0.8vw;
     }
 
@@ -1573,16 +1607,23 @@
     }
 
     .time-info {
+
         padding: 0.5vw;
         display: block;
-        width: 22vw;
+        width: 30vw;
         background-color: #fafafa;
+
+    }
+
+    .time-info img {
+
+        height: 20vh;
 
     }
 
     .time-info p {
 
-        font-size: 80%;
+        font-size: 100%;
 
     }
 
@@ -1676,6 +1717,46 @@
 
     }
 
+    .contact_footer {
+
+        padding: 0.5vw;
+        bottom: 0vw;
+        position: relative;
+        z-index: 11000;
+        width: 100vw;
+        height: auto;
+        background-color: #2f2f2f;
+
+    }
+
+    .contact_footer .contact-icon {
+
+        border: 1px solid white;
+        padding: 0.4vw;
+        margin: 0vw 0.3vw;
+        background-color: transparent;
+        width: 1.5vw;
+        border-radius: 100px;
+
+    }
+
+    .contact_footer p:nth-child(1) {
+
+        position: absolute;
+        left: 2vw;
+        color: #ffffff;
+        font-family: sans-serif;
+
+    }
+
+    .contact_footer p:nth-child(2) {
+
+        position: absolute;
+        left: 90vw;
+        color: #ffffff;
+        font-family: sans-serif;
+
+    }
 
 
-}
+}*/

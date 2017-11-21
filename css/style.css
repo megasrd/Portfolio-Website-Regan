@@ -229,7 +229,8 @@ body {
 .main-content-2 {
 
     margin: 1vh 3vw;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 

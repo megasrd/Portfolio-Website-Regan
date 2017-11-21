@@ -23,7 +23,7 @@
 
     <nav class="main_nav-bar">
         <ul>
-            <span class="hide-me"><li> <a href="my-game.html"> GAME ON! </a> </li></span>
+            <span class="hide-game"><li> <a href="my-game.html"> GAME ON! </a> </li></span>
             <li> <a href="#"> REEL </a> </li>
             <li> <a href="#section1"> HOME</a> </li>
         </ul>
@@ -66,23 +66,24 @@
         </div>
 
         <div class="main_container-2 section" data-anchor="section2">
-
-            <div class="main-content-2">
-
+            
                 <center>
 
                     <h2 class="page-header-2"> WHAT I DO </h2>
 
                 </center>
 
+            <div class="main-content-2">
+
+
                 <div class="about-container">
 
                     <h3 class="about-header"> VR </h3>
-                    <h4 class="about-subheader"> LOREM IPSUM </h4>
+                    <h4 class="about-subheader"> A New Dimension  </h4>
                     <center>
                         <div class="about-image abtimg1"> </div>
                     </center>
-                    <p class="about-paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniamA.</p>
+                    <p class="about-paragraph"> Since the world is stepping into a new dimension of digital spaces, Virtual Reality is a must. I develop these VR experiences using the Unity Game Engine and C#. Among other things. </p>
 
                 </div>
 
@@ -90,11 +91,11 @@
                 <div class="about-container">
 
                     <h3 class="about-header"> WEB </h3>
-                    <h4 class="about-subheader"> LOREM IPSUM </h4>
+                    <h4 class="about-subheader"> CREATING INTERNET EXPERIENCES </h4>
                     <center>
                         <div class="about-image abtimg2"> </div>
                     </center>
-                    <p class="about-paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniamA.</p>
+                    <p class="about-paragraph"> I'm able to create browser experiences using HTML, PHP and CSS. And I can get quite creative with Javascript too.  </p>
 
                 </div>
 
@@ -102,11 +103,11 @@
                 <div class="desktop-view about-container">
 
                     <h3 class="about-header"> CODING </h3>
-                    <h4 class="about-subheader"> LOREM IPSUM </h4>
+                    <h4 class="about-subheader"> MAKING EVERYTHING WORK </h4>
                     <center>
                         <div class="about-image abtimg3"> </div>
                     </center>
-                    <p class="about-paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniamA.</p>
+                    <p class="about-paragraph"> I enjoy a little program solving, be it coding a game in C# or creating a nifty web page functions using Javascript. I also take time to learn about other languages if possible. </p>
 
                 </div>
 
@@ -114,12 +115,12 @@
                 <div class="desktop-view  about-container hideme">
 
                     <h3 class="about-header"> GAME </h3>
-                    <h4 class="about-subheader"> LOREM IPSUM </h4>
+                    <h4 class="about-subheader"> CRAFT UNIQUE EXPERIENCES </h4>
                     <center>
                         <div class="about-image abtimg4"> </div>
                     </center>
-                    <p class="about-paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniamA.</p>
-
+                    <p class="about-paragraph"> From simple games to enjoy while on a break to immersing oneself in a different reality, I'm able to create all these. This is all done thanks to Blender and Unity.</p>
+ 
                 </div>
 
 
@@ -146,8 +147,8 @@
                     <div class="portrait-pic"> </div>
 
                 </center>
-
-                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+                
+                <p> Hello World, I am Regan. I think Game Technology and Web Development could be a peculiar combination, but I believe the next step for the Internet will be much more 3-Dimensional.  </p>
 
                 <h4> MY INTERESTS </h4>
 
@@ -313,7 +314,7 @@
 
                     </center>
 
-                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper. </p>
+                    <p> Hello World, I am Regan. I think Game Technology and Web Development could be a peculiar combination, but I believe the next step for the Internet will be much more 3-Dimensional.  </p>
 
                     <h4> MY INTERESTS </h4>
 
@@ -428,11 +429,7 @@
 
             <center>
 
-
-
                 <div class="timeline-container">
-
-
 
                     <h2 class="page-header-2"> EDUCATION </h2>
 
@@ -611,6 +608,10 @@
 
                 $('#wrapper').fullpage();
 
+            });
+            
+            $(document).ready(function(){
+                $(".aboutme_subsection").remove();
             });
 
         }
