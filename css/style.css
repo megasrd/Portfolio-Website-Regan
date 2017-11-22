@@ -807,3 +807,30 @@ font-family: 'Raleway', sans-serif;*/
     background-image: url(../images/images_level-icon1.png);
     
 }
+
+.school-image {
+    
+    background-image: url(../images/school-image.jpg);
+    background-size: cover;
+    
+}
+
+.computer_school-image {
+    
+    background-image: url(../images/computer_school-image.jpg);
+    background-size: cover;
+}
+
+.game-image {
+    
+    background-image: url(../images/game-image.jpg);
+    background-size: cover;
+    
+}
+
+.web-image {
+    
+    background-image: url(../images/web-image.jpg);
+    background-size: cover;
+    
+}
