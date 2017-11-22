@@ -60,7 +60,7 @@
 
     .main_container-3 {
 
-        height: 100vh;
+        height: auto;
 
     }
 
@@ -145,7 +145,7 @@
 
     .about-container {
 
-        padding: 2vw;
+        padding: 8vw;
         display: block;
         width: 80vw;
         margin: 2vh 5vw;
@@ -426,17 +426,25 @@
 
         height: auto;
         width: 80vw;
-        margin: 5vw;
-        padding: 1vw;
+        margin: 4vw;
+        padding: 4vw;
     }
 
-    .time-info img {}
+    .time-info img {
 
-    .time-info h3 {}
+        height: 25vh;
+
+    }
+
+    .time-info h3 {
+
+        font-size: 1.2em;
+        margin: 1vw;
+    }
 
     .time-info p {
 
-        font-size: 80%;
+        font-size: 70%;
 
     }
 
@@ -744,7 +752,7 @@
 
     .time-info h3 {
 
-        font-size: 1.8em;
+        font-size: 1em;
     }
 
     .time-info p {
@@ -1299,6 +1307,15 @@
 
         font-size: 100%;
 
+    }
+
+    .time-info h3 {
+
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        margin: 0.1vw;
+        text-align: left;
+        border-bottom: 0.5px solid #ff3e3e;
     }
 
     .contact-container {
