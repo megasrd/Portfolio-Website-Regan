@@ -811,27 +811,27 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 .school-image {
-    
+    height: 10vh;
     background-image: url(../images/school-image.jpg);
     background-size: cover;
     
 }
 
 .computer_school-image {
-    
+    height: 10vh;
     background-image: url(../images/computer_school-image.jpg);
     background-size: cover;
 }
 
 .game-image {
-    
+    height: 10vh;
     background-image: url(../images/game-image.jpg);
     background-size: cover;
     
 }
 
 .web-image {
-    
+    height: 10vh;
     background-image: url(../images/web-image.jpg);
     background-size: cover;
     
