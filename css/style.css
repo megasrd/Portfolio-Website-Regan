@@ -722,24 +722,26 @@ font-family: 'Raleway', sans-serif;*/
 .email_field {
 
     margin: 1vw 0vw;
-    width: 80%;
+    width: 70%;
     display: block;
-
+    padding: 0.5vw;
 }
 
 .name_field {
 
     margin: 1vw 0vw;
-    width: 80%;
+    width: 70%;
     display: block;
+    padding: 0.5vw;
 }
 
 .contact-textarea {
 
     margin: 1vw 0vw;
-    width: 80%;
+    width: 70%;
     height: 30vh;
     display: block;
+    padding: 0.5vw;
 
 }
 
