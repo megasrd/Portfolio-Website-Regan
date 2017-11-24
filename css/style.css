@@ -74,7 +74,8 @@ body {
 }
 
 .main_nav-bar {
-
+    
+    display: none;
     position: relative;
     z-index: 3000;
 
